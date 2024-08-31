@@ -2,24 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Simple Blog</title>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Blog</h1>
+        <h1 id="welcomeMessage">Welcome to Your Blog</h1>
+        <nav>
+            <a href="create-post.html" id="createPostBtn">Create Post</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </nav>
     </header>
+
     <main>
-        <article>
-            <h2>My First Blog Post</h2>
-            <p>This is my first blog post! Stay tuned for more content.</p>
-        </article>
+        <section id="postsContainer"></section>
     </main>
-    <footer>
-        <p>&copy; 2024 Blogging Engine. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+
+    <script src="index.js"></script>
 </body>
 </html>
